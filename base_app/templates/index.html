@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Form</title>
+</head>
+<body>
+    <h1>GNG</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="total_no_tests">Total number of Tests:</label>
+        <input type="text" id="total_no_tests" name="total_no_tests"><br><br>
+        <label for="Duration_per_test">Duration per test (STD):</label>
+        <input type="text" id="Duration_per_test" name="Duration_per_test"><br><br>
+         <label for="no_of_hrs_per_day">No of hours pers day:</label>
+        <input type="text" id="no_of_hrs_per_day" name="no_of_hrs_per_day"><br><br>
+        <label for="qual_cycle">Qual cycle</label>
+        <input type="text" id="qual_cycle" name="qual_cycle"><br><br>
+        <label for="no_of_slots">No of slots (NS)</label>
+        <input type="text" id="no_of_slots" name="no_of_slots"><br><br>
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>
